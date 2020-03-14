@@ -1,0 +1,10 @@
+<?php
+    session_start();
+    session_unset();
+    if(isset($_SESSION['email']))
+   {
+       header('location:Front_page.php');
+}
+    session_destroy();
+   header('Front_page.php'); 
+?>
